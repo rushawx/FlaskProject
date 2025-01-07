@@ -1,0 +1,55 @@
+GET http://127.0.0.1:5000/account
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-08T005317.404.html
+
+###
+
+GET http://127.0.0.1:5000/about
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-08T005221.200.html
+
+###
+
+GET http://127.0.0.1:5000/home
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-08T005218.200.html
+
+###
+
+GET http://127.0.0.1:5000
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-08T005150.200.html
+
+###
+
+POST http://127.0.0.1:5000/login
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-01-08T004935.200.html
+
+###
+
+GET http://127.0.0.1:5000/login
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2025-01-08T004853.200.html
+
+###
+

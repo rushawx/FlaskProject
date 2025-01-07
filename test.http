@@ -1,0 +1,11 @@
+### GET index
+GET http://127.0.0.1:5000/
+
+### GET home
+GET http://127.0.0.1:5000/home
+
+### GET about
+GET http://127.0.0.1:5000/about
+
+### GET account
+GET http://127.0.0.1:5000/account
