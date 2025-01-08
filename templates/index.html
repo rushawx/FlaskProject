@@ -1,35 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AboutMe</title>
+    <title>Арифметический калькулятор</title>
 </head>
 <body>
-    <h1 style="color: blue;">AboutMe</h1>
-    <hr>
-    <form action="/" method="post">
-        <ol>
-            <li>
-                <label for="username">Username:</label>
-                <input type="text" name="username">
-            </li>
-            <li>
-                <label for="age">Age:</label>
-                <input type="text" name="age">
-            </li>
-            <li>
-                <label for="city">City:</label>
-                <input type="text" name="city">
-            </li>
-            <li>
-                <label for="language">Favorite programming language:</label>
-                <input type="text" name="language">
-            </li>
-        </ol>
-        <p>
-            <input type="submit" value="Input" />
-        </p>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <h1>Арифметический калькулятор</h1>
+
+    <form action="/calculate" method="post">
+        <label for="number1">Число 1:</label>
+        <input id="number1" name="number1" required><br>
+
+        <label for="number2">Число 2:</label>
+        <input id="number2" name="number2" required><br>
+
+        <label for="operation">Выберите операцию:</label>
+        <select id="operation" name="operation" required>
+            <option value="add">Сложение</option>
+            <option value="multiply">Умножение</option>
+            <option value="power">Возведение в степень</option>
+            <option value="divide">Деление</option>
+        </select><br>
+
+        <input type="submit" value="Вычислить">
     </form>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
 </body>
 </html>
